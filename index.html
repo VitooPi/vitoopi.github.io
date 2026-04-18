@@ -70,4 +70,104 @@
         .edu-card { border-top-color: var(--edu-blue); }
         .tech-card { border-top-color: var(--tech-green); }
         .sound-card { border-top-color: var(--sound-purple); }
-        .about-card { border-top-color
+        .about-card { border-top-color: var(--about-gray); }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #222;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+            flex-grow: 1;
+        }
+
+        .tag-list {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background: #eee;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+            font-size: 0.8rem;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Vito's Digital Space</h1>
+        <p>跨学科教育专家 | 音乐科技研究者 | 声音设计师</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card edu-card">
+                <h2>教育咨询 & 升学战略</h2>
+                <p>专注于顶尖院校（Brown, Yale, NYU）作品集指导，结合学术研究与实操经验，为跨学科背景学生制定最优申请路径。</p>
+                <div class="tag-list">
+                    <span class="tag">作品集实验室</span>
+                    <span class="tag">ISEF/STS 指导</span>
+                    <span class="tag">名校录取</span>
+                </div>
+            </div>
+
+            <div class="card tech-card">
+                <h2>音乐与科技</h2>
+                <p>探索音频 DSP、AI 音频处理以及音频标准（LUFS, Spatial Audio）。将计算机科学与艺术表达深度融合。</p>
+                <div class="tag-list">
+                    <span class="tag">Stem Separation</span>
+                    <span class="tag">Audio Engineering</span>
+                    <span class="tag">跨学科研究</span>
+                </div>
+            </div>
+
+            <div class="card sound-card">
+                <h2>声音设计</h2>
+                <p>为电影、交互媒体及装置艺术创作叙事性音效。追求电影感的美学表达与极致的听觉交互体验。</p>
+                <div class="tag-list">
+                    <span class="tag">Showreel</span>
+                    <span class="tag">电影感审美</span>
+                    <span class="tag">交互音频</span>
+                </div>
+            </div>
+
+            <div class="card about-card">
+                <h2>关于我</h2>
+                <p>一个游走在逻辑与感性之间的观察者。致力于推动音乐科技教育的边界，分享行业洞察与生活美学。</p>
+                <div class="tag-list">
+                    <span class="tag">简历</span>
+                    <span class="tag">合作联系</span>
+                    <span class="tag">个人志</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Vito. All Rights Reserved. Built with passion & GitHub Pages.
+    </footer>
+
+</body>
+</html>
